@@ -1,5 +1,7 @@
 importScripts('imageManips.js');
 
+// here e is the message object we recieve and data is the value of each property of e we recieve
+// We need to include properties of both imageData and type to this worker
 this.onmessage = function(e) {
   var imageData = e.data.imageData;
   var type = e.data.type;
